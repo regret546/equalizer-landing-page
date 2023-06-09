@@ -85,10 +85,8 @@ h6 {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  background: url("assets/bg-main-mobile.png") no-repeat right;
+  background: url("assets/bg-main-mobile.png") no-repeat;
+  background-position: top -200% left;
   font-family: var(--ff--primary);
   color: var(--clr--black);
   font-weight: var(--ff--primary);
@@ -96,7 +94,12 @@ body {
 }
 
 .content {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
   margin: 3rem 1.5rem;
+  overflow: visible;
 }
 
 .header__logo img {
