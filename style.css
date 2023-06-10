@@ -86,21 +86,121 @@ h6 {
 
 body {
   background: url("assets/bg-main-mobile.png") no-repeat;
-  background-position: top -200% left;
+  background-position: top -250% left;
+  min-height: 100vh;
   font-family: var(--ff--primary);
   color: var(--clr--black);
-  font-weight: var(--ff--primary);
   font-weight: var(--fw--regular);
+  font-size: 18px;
+  text-align: left;
 }
 
 .content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
   background-size: cover;
-  margin: 3rem 1.5rem;
   overflow: visible;
 }
 
-.header__logo img {
+.content__header {
+  margin: 3rem 1.5rem;
+}
+
+.header__logo {
+  margin-bottom: 2.5rem;
+}
+
+.header__info h1 {
+  font-weight: var(--fw--very-bold);
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.header__info p {
+  font-weight: var(--fw--bold);
+}
+
+.content__main {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1000px;
+}
+
+.main__app {
+  display: flex;
+  justify-content: space-around;
+  background: url("assets/bg-pattern-2.svg") no-repeat center;
+  background-color: var(--clr--black);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding-bottom: 5rem;
+}
+
+.main__app_mobile {
+  margin-top: -100px;
+  display: flex;
+}
+
+.main__app_mobile img {
+  min-width: 150px;
+  height: 500px;
+  cursor: pointer;
+}
+
+.main__information {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr--bright-orange);
+  border-radius: 1rem;
+  margin-top: -50px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  color: var(--clr--white);
+}
+
+.main__information_price {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__information_price h3 {
+  font-weight: var(--fw--very-bold);
+  font-size: 36px;
+}
+
+.main__information_price p {
+  align-self: center;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.btn_ios,
+.btn_android {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn_ios {
+  background-color: var(--clr--black);
+  color: var(--clr--white);
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: var(--fw--very-bold);
+}
+
+.btn_android {
+  background-color: var(--clr--white);
+  color: var(--clr--black);
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: var(--fw--very-bold);
 }
