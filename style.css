@@ -5,12 +5,12 @@
   --clr--black: hsla(0, 0%, 20%);
 
   /* Font Family */
-  --ff--primary: "Hanken Grotesk", sans-serif;
+  --ff--primary: "Montserrat", sans-serif;
 
   /* Font Weight */
   --fw--regular: 300;
   --fw--bold: 500;
-  --fw--very-bold: 600;
+  --fw--very-bold: 700;
 }
 
 /*
@@ -119,6 +119,7 @@ body {
 
 .header__info p {
   font-weight: var(--fw--bold);
+  line-height: 1.5rem;
 }
 
 .content__main {
@@ -126,7 +127,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 1000px;
+  height: 900px;
+  margin-bottom: 2.5rem;
 }
 
 .main__app {
@@ -157,9 +159,13 @@ body {
   border-radius: 1rem;
   margin-top: -50px;
   padding: 3rem 2rem;
-  margin-bottom: 2rem;
   gap: 1rem;
   color: var(--clr--white);
+  margin-bottom: 1rem;
+}
+
+.main__information p:nth-of-type(1) {
+  line-height: 1.5rem;
 }
 
 .main__information_price {
@@ -203,4 +209,23 @@ body {
   border: none;
   border-radius: 0.5rem;
   font-weight: var(--fw--very-bold);
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  margin-inline: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.footer p:nth-of-type(2) {
+  font-weight: var(--fw--very-bold);
+}
+
+.footer__social_logo {
+  display: flex;
+  gap: 1rem;
+  margin: 3rem 0;
 }
