@@ -229,3 +229,75 @@ body {
   gap: 1rem;
   margin: 3rem 0;
 }
+
+/* For Tablet */
+@media only screen and (min-width: 768px) {
+  body {
+    background: url("assets/bg-pattern-1.svg") top -10% right -5%/ 270px 400px no-repeat,
+      url("assets/bg-main-tablet.png") no-repeat top 110% right 10%,
+      url("assets/bg-main-tablet.png") no-repeat top 110% left 100%;
+  }
+
+  .header__logo {
+    margin-bottom: 5rem;
+  }
+
+  .header__info h1 {
+    font-size: 56px;
+    margin-bottom: 2rem;
+  }
+  .content__header {
+    margin-right: 13rem;
+  }
+
+  .content__main {
+    margin-inline: 1.5rem;
+  }
+
+  .main__app {
+    background: url("assets/bg-pattern-2.svg") top center / 270px 400px
+      no-repeat var(--clr--black);
+    border-radius: 1rem;
+    height: 700px;
+  }
+  .main__app_mobile img {
+    min-width: 250px;
+    height: 550px;
+    cursor: pointer;
+  }
+  .main__app_mobile {
+    margin-left: -42%;
+  }
+  .main__information {
+    width: 55%;
+    margin-left: 34%;
+    margin-top: -65%;
+    padding: 3rem;
+    height: 550px;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .main__information h3 {
+    font-size: 56px;
+  }
+
+  .footer {
+    margin-bottom: 3rem;
+  }
+
+  .footer__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__contacts__info {
+    width: 50%;
+  }
+
+  .footer__social_logo {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+}
