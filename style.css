@@ -89,7 +89,6 @@ body {
   background: url("assets/bg-main-mobile.png") no-repeat;
   background-position: top -250% left;
   min-height: 100vh;
-  min-width: 100vh;
   font-family: var(--ff--primary);
   color: var(--clr--black);
   font-weight: var(--fw--regular);
