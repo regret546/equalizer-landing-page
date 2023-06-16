@@ -305,11 +305,15 @@ body {
   }
 
   .content {
-    margin-inline: 12rem;
+    margin-inline: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
   }
 
   .content__header {
     align-self: center;
+    margin-bottom: 5rem;
   }
 
   .header__info h1 {
@@ -317,16 +321,34 @@ body {
   }
 
   .content__main {
+    background: url("assets/bg-pattern-2.svg") top -10% left 50% no-repeat var(--clr--black);
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .main__app {
+    width: 350px;
     margin: 0;
+    margin-top: -20%;
+    margin-left: 25%;
+  }
+
+  .main__app img {
+    height: 650px;
+    width: 300px;
   }
 
   .main__information {
     margin: 0;
+    margin-right: 20%;
+    margin-bottom: -15%;
+    width: 600px;
+    height: 500px;
+  }
+
+  .footer {
+    width: 100%;
   }
 }
