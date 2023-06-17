@@ -1,9 +1,9 @@
 :root {
   /* Colors */
-  --clr--bright-orange: hsl(31, 77%, 52%);
+  --clr--bright-orange: hsl(12, 95%, 65%);
   --clr--white: rgb(255, 255, 255);
   --clr--white-hover: rgb(207, 203, 203);
-  --clr--black: hsla(0, 0%, 20%);
+  --clr--black: hsla(244, 23%, 12%);
   --clr--black-hover: rgb(75, 73, 73);
   /* Font Family */
   --ff--primary: "Montserrat", sans-serif;
@@ -153,7 +153,6 @@ body {
   color: var(--clr--white);
   margin-bottom: 3rem;
   height: 500px;
-  max-width: 400px;
 }
 
 .main__information p:nth-of-type(1) {
@@ -272,6 +271,7 @@ body {
     height: 600px;
     margin-top: -320px;
     margin-right: -200px;
+    max-width: 400px;
   }
   .main__information h3 {
     font-size: 56px;
@@ -316,39 +316,49 @@ body {
     margin-bottom: 5rem;
   }
 
+  .header__info {
+    margin-right: 12rem;
+  }
+
   .header__info h1 {
     font-size: 70px;
   }
 
   .content__main {
-    background: url("assets/bg-pattern-2.svg") top -10% left 50% no-repeat var(--clr--black);
+    background: url("assets/bg-pattern-2.svg") top -15% left 40% no-repeat var(--clr--black);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .main__app {
+    margin: 0;
+  }
+
+  .main__app img {
+    height: 600px;
+    min-width: 200px;
+    margin-top: -90%;
+  }
+
+  .main__information {
+    margin: 0;
+    margin-bottom: -20%;
+    margin-left: 10%;
+    min-width: 300px;
+    gap: 2rem;
+    height: 550px;
+  }
+
+  .footer {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .main__app {
-    width: 350px;
-    margin: 0;
-    margin-top: -20%;
-    margin-left: 25%;
-  }
-
-  .main__app img {
-    height: 650px;
-    width: 300px;
-  }
-
-  .main__information {
-    margin: 0;
-    margin-right: 20%;
-    margin-bottom: -15%;
-    width: 600px;
-    height: 500px;
-  }
-
-  .footer {
-    width: 100%;
+  .footer__contacts {
+    width: 75%;
   }
 }
